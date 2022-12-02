@@ -281,6 +281,14 @@ button:focus,
     width: 40%;
 }
 
+.tags-search {
+    margin-bottom: 30px;
+}
+
+.panel-heading {
+    margin-bottom: 20px;
+}
+
 .footer {
     padding-bottom: 30px;
 }

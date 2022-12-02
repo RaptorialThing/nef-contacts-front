@@ -20,8 +20,8 @@
 			<span class="menu-button"></span>
 		</label>
 		<nav class="main-nav">
-			<div class="main-nav__link-container"><a href="#" class="main-nav__link main-nav__link_active">Contacts</a></div>
-			<div class="main-nav__link-container"><a href="#" class="main-nav__link">Tags list</a></div>
+			<div class="main-nav__link-container"><a href="#" class="main-nav__link">Contacts</a></div>
+			<div class="main-nav__link-container"><a href="#" class="main-nav__link main-nav__link_active">Tags list</a></div>
 		</nav>
 	</div><!--.container-->
 </header><!--.header-->
@@ -31,8 +31,144 @@
 		<div class="page-content page-content_contacts">
 			<h2 class="page-title page-title_contacts">Tags</h2>
 
+			<div class="contacts-table-container">
+				<div class="col-md-12">
+					<div class="panel panel-default panel-table">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col col-xs-6">
+									<div class="input-group input-group-sm">
+										<input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+										<button type="button" class="btn btn-outline-secondary">Search</button>
+										<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</button>
+										<ul class="dropdown-menu dropdown-menu-end">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+											<li><hr class="dropdown-divider"></li>
+											<li><a class="dropdown-item" href="#">Separated link</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col col-xs-6 text-end">
+									<button type="button" class="btn btn-sm btn-primary btn-create">Check all</button>
+									<button class="btn btn-sm btn-primary disabled"><em class="fa fa-pencil"></em></button>
+									<button class="btn btn-sm btn-danger disabled"><em class="fa fa-trash"></em></button>
+									<button type="button" class="btn btn-sm btn-primary btn-create">Create New</button>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<table class="table table-striped table-bordered table-list table-hover align-middle contacts-table">
+								<thead>
+								<tr>
+									<th class="width-5">Check</th>
+									<th class="width-40">Tags</th>
+									<th class="width-10"><em class="fa fa-cog"></em></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+											</label>
+										</div>
+									</td>
+									<td>Tag 1</td>
+									<td>
+										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+											</label>
+										</div>
+									</td>
+									<td>Tag 2</td>
+									<td>
+										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+											</label>
+										</div>
+									</td>
+									<td>Tag 3</td>
+									<td>
+										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+											</label>
+										</div>
+									</td>
+									<td>Tag 4</td>
+									<td>
+										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+											</label>
+										</div>
+									</td>
+									<td>Tag 5</td>
+									<td>
+										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+									</td>
+								</tr>
+								</tbody>
+							</table>
 
-		</div><!--.container-->
+						</div>
+						<div class="panel-footer">
+							<div class="row">
+								<div class="col col-xs-4">Page 1 of 5</div>
+								<div class="col col-xs-8">
+									<nav aria-label="Page navigation example">
+										<ul class="pagination justify-content-end">
+											<li class="page-item disabled">
+												<a class="page-link">Previous</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item">
+												<a class="page-link" href="#">Next</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--.container-->
 </main><!--.main-content-->
 
 <footer class="footer" id="footer">

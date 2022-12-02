@@ -20,8 +20,10 @@
 			<span class="menu-button"></span>
 		</label>
 		<nav class="main-nav">
-			<div class="main-nav__link-container"><a href="#" class="main-nav__link">Contacts</a></div>
-			<div class="main-nav__link-container"><a href="#" class="main-nav__link main-nav__link_active">Tags list</a></div>
+			<ul>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Теги</a></li>
+			</ul>
 		</nav>
 	</div><!--.container-->
 </header><!--.header-->
@@ -29,7 +31,7 @@
 <main class="main-content" role="main">
 	<div class="container">
 		<div class="page-content page-content_contacts">
-			<h2 class="page-title page-title_contacts">Tags</h2>
+			<h2 class="page-title page-title_contacts">Теги</h2>
 
 			<div class="contacts-table-container">
 				<div class="col-md-12">
@@ -39,34 +41,31 @@
 								<div class="col col-xs-6">
 									<div class="input-group input-group-sm">
 										<input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-										<button type="button" class="btn btn-outline-secondary">Search</button>
+										<button type="button" class="btn btn-outline-secondary">Поиск</button>
 										<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
 											<span class="visually-hidden">Toggle Dropdown</span>
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end">
-											<li><a class="dropdown-item" href="#">Action</a></li>
-											<li><a class="dropdown-item" href="#">Another action</a></li>
-											<li><a class="dropdown-item" href="#">Something else here</a></li>
-											<li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#">Separated link</a></li>
+											<li><a class="dropdown-item" href="#">Фильтр 1</a></li>
+											<li><a class="dropdown-item" href="#">Фильтр 2</a></li>
+											<li><a class="dropdown-item" href="#">Фильтр 3</a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="col col-xs-6 text-end">
-									<button type="button" class="btn btn-sm btn-primary btn-create">Check all</button>
-									<button class="btn btn-sm btn-primary disabled"><em class="fa fa-pencil"></em></button>
+									<button type="button" class="btn btn-sm btn-primary btn-create">Выбрать все</button>
 									<button class="btn btn-sm btn-danger disabled"><em class="fa fa-trash"></em></button>
-									<button type="button" class="btn btn-sm btn-primary btn-create">Create New</button>
+									<button type="button" class="btn btn-sm btn-primary btn-create">Создать</button>
 								</div>
 							</div>
 						</div>
-						<div class="panel-body">
+						<div class="panel-body table-responsive">
 							<table class="table table-striped table-bordered table-list table-hover align-middle contacts-table">
 								<thead>
 								<tr>
-									<th class="width-5">Check</th>
-									<th class="width-40">Tags</th>
-									<th class="width-10"><em class="fa fa-cog"></em></th>
+									<th class="width-5">Выбрать</th>
+									<th class="width-40">Теги</th>
+									<th class="width-10">Редактирование</th>
 								</tr>
 								</thead>
 								<tbody>
@@ -146,18 +145,18 @@
 						</div>
 						<div class="panel-footer">
 							<div class="row">
-								<div class="col col-xs-4">Page 1 of 5</div>
+								<div class="col col-xs-4">Страница 1 из 5</div>
 								<div class="col col-xs-8">
 									<nav aria-label="Page navigation example">
 										<ul class="pagination justify-content-end">
 											<li class="page-item disabled">
-												<a class="page-link">Previous</a>
+												<a class="page-link">Предыдущая</a>
 											</li>
 											<li class="page-item"><a class="page-link" href="#">1</a></li>
 											<li class="page-item"><a class="page-link" href="#">2</a></li>
 											<li class="page-item"><a class="page-link" href="#">3</a></li>
 											<li class="page-item">
-												<a class="page-link" href="#">Next</a>
+												<a class="page-link" href="#">Следующая</a>
 											</li>
 										</ul>
 									</nav>

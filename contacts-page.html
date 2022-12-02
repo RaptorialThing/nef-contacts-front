@@ -12,24 +12,26 @@
 		<link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
 	</head>
 	<body>
-		<header class="header">
-			<div class="container header__container">
-				<h1 class="logo"><a href="#" class="logo__img">Contacts base</a></h1>
-				<input id="menu-toggle" type="checkbox"/>
-				<label class="menu-button-container" for="menu-toggle">
-					<span class="menu-button"></span>
-				</label>
-				<nav class="main-nav">
-					<div class="main-nav__link-container"><a href="#" class="main-nav__link main-nav__link_active">Contacts</a></div>
-					<div class="main-nav__link-container"><a href="#" class="main-nav__link">Tags</a></div>
-				</nav>
-			</div><!--.container-->
-		</header><!--.header-->
+	<header class="header">
+		<div class="container header__container">
+			<h1 class="logo"><a href="#" class="logo__img">Contacts base</a></h1>
+			<input id="menu-toggle" type="checkbox"/>
+			<label class="menu-button-container" for="menu-toggle">
+				<span class="menu-button"></span>
+			</label>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Теги</a></li>
+				</ul>
+			</nav>
+		</div><!--.container-->
+	</header><!--.header-->
 		
 		<main class="main-content" role="main">
 			<div class="container">
 				<div class="page-content page-content_contacts">
-					<h2 class="page-title page-title_contacts">Contacts info</h2>
+					<h2 class="page-title page-title_contacts">База контактов</h2>
 
 					<div class="contacts-table-container">
 						<div class="col-md-12">
@@ -37,23 +39,23 @@
 								<div class="panel-heading">
 									<div class="row">
 										<div class="col col-xs-6">
-											<h3 class="panel-title">Panel Heading</h3>
+											<h3 class="panel-title">Заголовок таблицы</h3>
 										</div>
 										<div class="col col-xs-6 text-end">
-											<button type="button" class="btn btn-sm btn-primary btn-create">Create New</button>
+											<button type="button" class="btn btn-sm btn-primary btn-create">Создать</button>
 										</div>
 									</div>
 								</div>
-								<div class="panel-body">
+								<div class="panel-body table-responsive">
 									<table class="table table-striped table-bordered table-list table-hover align-middle contacts-table">
 										<thead>
 										<tr>
 											<th class="width-5"><em class="fa fa-cog"></em></th>
 											<th class="hidden-xs width-5">ID</th>
-											<th class="width-20">Name</th>
-											<th class="width-20">Email</th>
-											<th class="width-10">Phone</th>
-											<th class="width-40">Tags</th>
+											<th class="width-20">Имя</th>
+											<th class="width-20">Почта</th>
+											<th class="width-10">Телефон</th>
+											<th class="width-40">Теги</th>
 										</tr>
 										</thead>
 										<tbody>
@@ -201,18 +203,18 @@
 								</div>
 								<div class="panel-footer">
 									<div class="row">
-										<div class="col col-xs-4">Page 1 of 5</div>
+										<div class="col col-xs-4">Страница 1 из 5</div>
 										<div class="col col-xs-8">
 											<nav aria-label="Page navigation example">
 												<ul class="pagination justify-content-end">
 													<li class="page-item disabled">
-														<a class="page-link">Previous</a>
+														<a class="page-link">Предыдущая</a>
 													</li>
 													<li class="page-item"><a class="page-link" href="#">1</a></li>
 													<li class="page-item"><a class="page-link" href="#">2</a></li>
 													<li class="page-item"><a class="page-link" href="#">3</a></li>
 													<li class="page-item">
-														<a class="page-link" href="#">Next</a>
+														<a class="page-link" href="#">Следующая</a>
 													</li>
 												</ul>
 											</nav>

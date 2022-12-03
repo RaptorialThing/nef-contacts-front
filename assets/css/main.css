@@ -449,41 +449,6 @@ button:focus,
         top: 14px;
     }
 
-    .main-nav__dropdown-item_1:before {
-        background: url("../img/lifebuoy.png") center top no-repeat;
-        background-size: contain;
-    }
-
-    .main-nav__dropdown-item_2:before {
-        background: url("../img/thumbs-up.png") center top no-repeat;
-        background-size: contain;
-    }
-
-    .main-nav__dropdown-item_3:before {
-        background: url("../img/mouse-pointer.png") center top no-repeat;
-        background-size: contain;
-    }
-
-    .main-nav__dropdown-item_4:before {
-        background: url("../img/activity.png") center top no-repeat;
-        background-size: contain;
-    }
-
-    .main-nav__dropdown-item_5:before {
-        background: url("../img/globe.png") center top no-repeat;
-        background-size: contain;
-    }
-
-    .main-nav__dropdown-item_6:before {
-        background: url("../img/mic.png") center top no-repeat;
-        background-size: contain;
-    }
-
-    .main-nav__link-container:hover .main-nav__link_dropdown:after {
-        background: url("../img/arrow-down.svg") no-repeat;
-        background-size: contain;
-    }
-
     .main-nav__dropdown-item:first-child {
         border: 0;
     }
@@ -499,14 +464,6 @@ button:focus,
         padding: 8px 0;
     }
 
-    .contact-btn_mobile {
-        display: inline-block;
-        background: transparent;
-        height: 48px;
-        line-height: 48px;
-        padding: 0 40px;
-    }
-
     .page-title {
         height: 48px;
         font-size: 20px;
@@ -517,19 +474,6 @@ button:focus,
 
     .page-content {
         padding: 0;
-    }
-
-    .page-content__row {
-        margin-bottom: 0;
-    }
-
-    .page-content__cell50,
-    .page-content__cell100,
-    .page-content__cell33,
-    .page-content__cell67 {
-        padding: 0;
-        width: 100%;
-        margin-bottom: 0;
     }
 
     .page-content img {
@@ -543,61 +487,8 @@ button:focus,
         margin-bottom: 5px;
     }
 
-    .goals h3 {
-        font-size: 20px;
-        line-height: 24px;
-        text-align: left;
-        font-weight: 500;
-    }
-
-    .goals__list {
-        flex-direction: column;
-    }
-
-    .goals__item {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    .contact-us .container {
-        height: auto;
-        padding: 25px 20px;
-    }
-
-    .contact-us__form {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .contact-us__col-left,
-    .contact-us__col-right {
-        width: 100%;
-        padding: 0;
-    }
-
-    .contact-us__img {
-        display: none;
-    }
-
-    .contact-us__title {
-        height: 48px;
-        line-height: 48px;
-        padding: 0 25px;
-        transform: none;
-        display: inline-block;
-        width: auto;
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .contact-us__submit-container {
-        flex-direction: column;
-    }
-
-    .contact-us__submit {
-        width: 100%;
-        margin-bottom: 15px;
+    .contacts-table {
+        min-width: 1000px;
     }
 
     .scrollToTopBtn {
@@ -698,7 +589,7 @@ button:focus,
     }
 
     .scrollToTopBtn {
-        bottom: 70px;
+        bottom: 125px;
     }
 
     .page-content_contacts {

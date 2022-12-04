@@ -189,7 +189,6 @@ button:focus,
 .main-nav__link-container:hover .main-nav__link {color: #0056A6;}
 
 .main-nav__link-container:hover .main-nav__link_dropdown:after {
-    background: url("../img/arrow-down-hover.svg") no-repeat;
     background-size: contain;
 }
 
@@ -278,7 +277,7 @@ button:focus,
     margin: 0;
 }
 
-.scrollToTopBtn {
+#scrollToTopBtn {
     /* same general styles as before */
     border: none;
     border-radius: 100%;
@@ -308,9 +307,9 @@ button:focus,
 }
 
 .showBtn {
-    opacity: 1;
-    transform: translateY(0);
-    box-shadow: 0 0 6px #fff;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    box-shadow: 0 0 6px #fff !important;
 }
 
 
@@ -495,7 +494,7 @@ button:focus,
         min-width: 1000px;
     }
 
-    .scrollToTopBtn {
+    #scrollToTopBtn {
         width: 40px;
         height: 40px;
     }
@@ -592,7 +591,7 @@ button:focus,
         justify-content: flex-start;
     }
 
-    .scrollToTopBtn {
+    #scrollToTopBtn {
         bottom: 125px;
     }
 

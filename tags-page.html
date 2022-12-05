@@ -54,6 +54,7 @@
 								</div>
 								<div class="col col-sm-6 text-end col-12 gy-2">
 									<button type="button" class="btn btn-sm btn-primary btn-create">Выбрать все</button>
+									<button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#multipleTagsEditModal"><em class="fa fa-pencil"></em></button>
 									<button class="btn btn-sm btn-danger disabled"><em class="fa fa-trash"></em></button>
 									<button type="button" class="btn btn-sm btn-primary btn-create">Создать</button>
 								</div>
@@ -79,7 +80,7 @@
 									</td>
 									<td>Tag 1</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tagsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 								</tr>
@@ -93,7 +94,7 @@
 									</td>
 									<td>Tag 2</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tagsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 								</tr>
@@ -107,7 +108,7 @@
 									</td>
 									<td>Tag 3</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tagsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 								</tr>
@@ -121,7 +122,7 @@
 									</td>
 									<td>Tag 4</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tagsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 								</tr>
@@ -135,7 +136,7 @@
 									</td>
 									<td>Tag 5</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tagsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 								</tr>
@@ -178,6 +179,65 @@
 		</div>
 	</div>
 </footer><!--.footer-->
+
+<div class="modal fade" id="tagsEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><!-- modal begin -->
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="exampleModalLabel">Редактирование тега</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="mb-3">
+						<label for="recipient-tag" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="recipient-tag">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+				<button type="button" class="btn btn-primary">Сохранить</button>
+			</div>
+		</div>
+	</div>
+</div><!-- modal end -->
+
+<div class="modal fade" id="multipleTagsEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><!-- modal begin -->
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5">Массовое редактирование тегов</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="mb-3">
+						<label for="tagToEdit1" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="tagToEdit1">
+					</div>
+					<div class="mb-3">
+						<label for="tagToEdit1" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="tagToEdit2">
+					</div>
+					<div class="mb-3">
+						<label for="tagToEdit1" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="tagToEdit3">
+					</div>
+					<div class="mb-3">
+						<label for="tagToEdit1" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="tagToEdit4">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+				<button type="button" class="btn btn-primary">Сохранить</button>
+			</div>
+		</div>
+	</div>
+</div><!-- modal end -->
+
 <button id="scrollToTopBtn">To The Top</button>
 <!-- Facta, non verba -->
 <script src="assets/js/jquery/jquery.js"></script>

@@ -41,7 +41,10 @@
 								<div class="col col-sm-6 col-12 text-sm-center gy-2">
 									<form action="#">
 										<div class="mb-3">
-											<input class="form-control form-control-sm" type="file" id="formFile">
+											<div class="input-group input-group-sm">
+												<input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+												<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Выгрузить</button>
+											</div>
 										</div>
 
 										<div class="input-group input-group-sm">
@@ -60,7 +63,7 @@
 								</div>
 								<div class="col col-sm-6 text-end col-12 gy-2">
 									<button type="button" class="btn btn-sm btn-primary btn-create">Выбрать все</button>
-									<button class="btn btn-sm btn-primary disabled"><em class="fa fa-pencil"></em></button>
+									<button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#multipleTagsEditModal"><em class="fa fa-pencil"></em></button>
 									<button class="btn btn-sm btn-danger disabled"><em class="fa fa-trash"></em></button>
 									<button type="button" class="btn btn-sm btn-primary btn-create">Создать</button>
 								</div>
@@ -72,8 +75,8 @@
 								<tr>
 									<th class="width-5"><em class="fa fa-check"></em></th>
 									<th class="width-10"><em class="fa fa-cog"></em></th>
-									<th class="hidden-xs width-5">ID</th>
-									<th class="width-10">Имя</th>
+									<th class="hidden-xs width-5">ID <a href="#" class="sort-arrow-down sort-arrow-active"><em class="fa fa-arrow-down"></em></a></th>
+									<th class="width-10">Имя <a href="#" class="sort-arrow-up sort-arrow-active"><em class="fa fa-arrow-up"></em></a></th>
 									<th class="width-20">Почта</th>
 									<th class="width-10">Телефон</th>
 									<th class="width-40">Теги</th>
@@ -89,7 +92,7 @@
 									</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -107,7 +110,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -125,7 +128,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -143,7 +146,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -160,7 +163,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -178,7 +181,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -196,7 +199,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -214,7 +217,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -232,7 +235,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -250,7 +253,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -268,7 +271,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -286,7 +289,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -304,7 +307,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -322,7 +325,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -340,7 +343,7 @@
 										</div>
 									</td>
 									<td>
-										<a class="btn btn-primary"><em class="fa fa-pencil"></em></a>
+										<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactsEditModal"><em class="fa fa-pencil"></em></a>
 										<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
 									</td>
 									<td class="hidden-xs">1</td>
@@ -388,6 +391,77 @@
 		</div>
 	</div>
 </footer><!--.footer-->
+
+<div class="modal fade" id="contactsEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><!-- modal begin -->
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="exampleModalLabel">Редактирование контакта</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="mb-3">
+						<label for="recipient-name" class="col-form-label">Имя:</label>
+						<input type="text" class="form-control" id="recipient-name">
+					</div>
+					<div class="mb-3">
+						<label for="recipient-email" class="col-form-label">Почта:</label>
+						<input type="email" class="form-control" id="recipient-email">
+					</div>
+					<div class="mb-3">
+						<label for="recipient-phone" class="col-form-label">Телефон:</label>
+						<input type="tel" class="form-control" id="recipient-phone">
+					</div>
+					<div class="mb-3">
+						<label for="recipient-phone" class="col-form-label">Теги:</label><br>
+						<input class="tags" name='tags-edit' value='[{"value":"point"}, {"value":"soft"}]' pattern='^[A-Za-z_✲ ]{1,15}$'>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+				<button type="button" class="btn btn-primary">Сохранить</button>
+			</div>
+		</div>
+	</div>
+</div><!-- modal end -->
+
+<div class="modal fade" id="multipleTagsEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><!-- modal begin -->
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5">Массовое редактирование тегов</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="mb-3">
+						<label for="tagToEdit1" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="tagToEdit1">
+					</div>
+					<div class="mb-3">
+						<label for="tagToEdit1" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="tagToEdit2">
+					</div>
+					<div class="mb-3">
+						<label for="tagToEdit1" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="tagToEdit3">
+					</div>
+					<div class="mb-3">
+						<label for="tagToEdit1" class="col-form-label">Тег:</label>
+						<input type="text" class="form-control" id="tagToEdit4">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+				<button type="button" class="btn btn-primary">Сохранить</button>
+			</div>
+		</div>
+	</div>
+</div><!-- modal end -->
+
 <button id="scrollToTopBtn">To The Top</button>
 <!-- Facta, non verba -->
 <script src="assets/js/jquery/jquery.js"></script>

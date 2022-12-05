@@ -312,7 +312,13 @@ button:focus,
     box-shadow: 0 0 6px #fff !important;
 }
 
+.sort-arrow-down, .sort-arrow-up {
+    color: #000;
+}
 
+.sort-arrow-active .fa {
+    transform: rotate(180deg);
+}
 
 
 

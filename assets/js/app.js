@@ -72,6 +72,12 @@
 
 
 //--------------------------- TAGIFY SETTINGS ---------------------------//
+// The DOM element you wish to replace with Tagify
+let input = document.querySelector('input[name=basic]');
+
+// initialize Tagify on the above input node reference
+new Tagify(input)
+
 let inputs = document.getElementsByClassName('tags'), tagify = []
 
 for(let i = 0; i < inputs.length; i++) {
